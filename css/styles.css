@@ -1,0 +1,155 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #14006b; /* azul como tu Figma */
+    color: white;
+}
+
+/* HEADER */
+.topbar {
+    background: white;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.topbar .logo {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.topbar input {
+    width: 40%;
+    padding: 6px;
+    border-radius: 8px;
+    border: none;
+    background: #f0f0f0;
+}
+
+.topbar nav a {
+    color: black;
+    margin-left: 15px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* CONTENIDO */
+.main-container {
+    padding: 30px;
+}
+
+/* Tarjetas para logos de marcas */
+.grid-logos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.card-logo {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-logo img {
+    width: 120px;
+}
+
+/* Páginas de historia */
+.historia-box {
+    background: #e6e6e6;
+    color: black;
+    padding: 25px;
+    border-radius: 15px;
+}
+
+.historia-box img {
+    width: 200px;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+/* FOOTER */
+.footer {
+    margin-top: 40px;
+    background: #c38c56; /* marrón de tu diseño */
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    color: black;
+}
+
+.btn-volver {
+    display: block;
+    margin-left: auto;        /* lo manda a la derecha */
+    margin-bottom: 20px;      
+    background: red;
+    color: white;
+    padding: 5px 12px;        /* 👉 más chico */
+    font-size: 14px;          /* 👉 texto más pequeño */
+    border-radius: 6px;       /* 👉 bordes más chicos */
+    text-decoration: none;
+    font-weight: bold;
+    width: 110px;
+}
+
+/* CARRUSEL */
+.carousel {
+    position: relative;
+    width: 80%;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.carousel-track {
+    display: flex;
+    width: 300%;
+    animation: slide 12s infinite;
+}
+
+.carousel-track img {
+    width: 100%;
+    object-fit: cover;
+}
+
+/* Animación automática */
+@keyframes slide {
+    0%   { transform: translateX(0%); }
+    33%  { transform: translateX(-100%); }
+    66%  { transform: translateX(-200%); }
+    100% { transform: translateX(0%); }
+}
+
+/* Botones */
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.5);
+    border: none;
+    color: white;
+    padding: 10px 14px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
+
+.carousel-btn:hover {
+    background: rgba(0,0,0,0.8);
+}
