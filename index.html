@@ -24,20 +24,21 @@
         <img src="img/turueda_portada.png" style="width:60%; border-radius:15px;">
     </div>
 
-    <!-- 🔥 CARRUSEL DE IMÁGENES (AHORA ABAJO) 🔥 -->
-    <div class="carousel" style="margin-top:25px;">
-        <div class="carousel-track">
-            <img src="img/carro1.png" alt="Imagen 1">
-            <img src="img/carro2.png" alt="Imagen 2">
-            <img src="img/carro3.png" alt="Imagen 3">
-        </div>
-
-        <!-- Botones -->
-        <button class="carousel-btn prev">&#10094;</button>
-        <button class="carousel-btn next">&#10095;</button>
-    </div>
-
 </main>
+<div class="carousel">
+    <div class="carousel-track">
+        <img src="img/carro1.png" alt="Carro 1">
+        <img src="img/carro2.png" alt="Carro 2">
+        <img src="img/carro3.png" alt="Carro 3">
+    </div>
+    <button class="carousel-btn prev">&lt;</button>
+    <button class="carousel-btn next">&gt;</button>
+    <div class="indicators">
+        <span class="dot active" data-slide="0"></span>
+        <span class="dot" data-slide="1"></span>
+        <span class="dot" data-slide="2"></span>
+    </div>
+</div>
 
 <footer class="footer">
     <div>
@@ -48,6 +49,7 @@
         <p><strong>Secciones</strong></p>
         <p>Autos</p>
         <p>Motos</p>
+<script src="js/javascript.js"></script>
     </div>
     <div>
         <p><strong>Contacto</strong></p>
@@ -56,6 +58,6 @@
     </div>
 </footer>
 
-<script src="js/carousel.js"></script>
+
 </body>
 </html>
